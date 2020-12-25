@@ -6,6 +6,7 @@
     <packaging>maven-plugin</packaging>
     <version>2.0.2-SNAPSHOT</version>
     <name>parent</name>
+    <name>HWM Maven Plugin</name>
     <url>https://github.com/fburato/highwheel-modules-maven-plugin</url>
     <description>Enforce dependencies modules dependencies on Java project</description>
     <scm>
