@@ -6,12 +6,12 @@
     <packaging>maven-plugin</packaging>
     <version>2.0.1-SNAPSHOT</version>
     <name>parent</name>
-    <url>https://github.com/fburato/highwheel-modules</url>
+    <url>https://github.com/fburato/highwheel-modules-maven-plugin</url>
     <description>Enforce dependencies modules dependencies on Java project</description>
     <scm>
-        <connection>scm:git:git@github.com:fburato/highwheel-modules.git</connection>
-        <developerConnection>scm:git:git@github.com:fburato/highwheel-modules.git</developerConnection>
-        <url>https://github.com/fburato/highwheel-modules</url>
+        <connection>scm:git:git@github.com:fburato/highwheel-modules-maven-plugin.git</connection>
+        <developerConnection>scm:git:git@github.com:fburato/highwheel-modules-maven-plugin.git</developerConnection>
+        <url>https://github.com/fburato/highwheel-modules-maven-plugin</url>
         <tag>HEAD</tag>
     </scm>
 
