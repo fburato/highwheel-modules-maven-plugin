@@ -12,4 +12,4 @@ ROOT_DIR:=$(shell dirname $(realpath $(firstword $(MAKEFILE_LIST))))
 
 
 release:
-	mvn -Prelease-sign-artifacts clean release:clean release:perform
+	mvn -Prelease-sign-artifacts clean release:clean release:prepare release:perform
