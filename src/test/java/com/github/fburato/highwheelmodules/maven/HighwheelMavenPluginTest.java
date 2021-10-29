@@ -15,10 +15,13 @@ public class HighwheelMavenPluginTest {
     private Verifier verifier;
     private final String analyseGoal = "com.github.fburato:highwheel-modules-maven-plugin:analyse";
     private final List<String> analysisGoals = Arrays.asList("compile", analyseGoal);
+    private final String[] defaultCLIOptions =  new String[] {"-Dhwm.version=2.1.0-SNAPSHOT"};
 
     @BeforeEach
     public void setUp() throws Exception {
-        verifier = new Verifier(Paths.get("target", "test-classes", "test-example").toAbsolutePath().toString());
+        verifier = new Verifier(
+                Paths.get("target", "test-classes", "test-example").toAbsolutePath().toString(),
+                null, false, defaultCLIOptions);
     }
 
     private String runPluginAndReturnLog(boolean expectFailure) {
@@ -133,7 +136,8 @@ public class HighwheelMavenPluginTest {
     }
 
     private Verifier multiModuleVerifier() throws Exception {
-        return new Verifier(Paths.get("target", "test-classes", "multi-module").toAbsolutePath().toString());
+        return new Verifier(Paths.get("target", "test-classes", "multi-module").toAbsolutePath().toString(),
+                null, false, defaultCLIOptions);
     }
 
     @Test
