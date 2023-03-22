@@ -15,7 +15,7 @@ public class HighwheelMavenPluginTest {
     private Verifier verifier;
     private final String analyseGoal = "com.github.fburato:highwheel-modules-maven-plugin:analyse";
     private final List<String> analysisGoals = Arrays.asList("compile", analyseGoal);
-    private final String[] defaultCLIOptions =  new String[] {"-Dhwm.version=2.1.1-SNAPSHOT"};
+    private final String[] defaultCLIOptions =  new String[] {"-Dhwm.version=" + System.getProperty("hwm.version")}; // set in surefire
 
     @BeforeEach
     public void setUp() throws Exception {
